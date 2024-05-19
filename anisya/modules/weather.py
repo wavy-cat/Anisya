@@ -1,0 +1,2 @@
+def weather(body):
+    pass

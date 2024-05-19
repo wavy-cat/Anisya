@@ -1,0 +1,176 @@
+### Register /image slash-comamand with animal pics
+POST https://discord.com/api/v10/applications/{{app_id}}/commands
+Authorization: Bot {{token}}
+Content-Type: application/json
+
+{
+  "name": "image",
+  "description": "Sends a photo of a cat, dog or random",
+  "options": [
+    {
+      "type": 3,
+      "name": "photo",
+      "description": "Whose photo should I send?",
+      "required": true,
+      "choices": [
+        {
+          "name": "🐕 Dog",
+          "value": "animal_dog"
+        },
+        {
+          "name": "🐈 Cat",
+          "value": "animal_cat"
+        },
+        {
+          "name": "🎲 Random",
+          "value": "animal_rnd"
+        }
+      ]
+    }
+  ]
+}
+
+### Register /waifu slash-command
+POST https://discord.com/api/v10/applications/{{app_id}}/commands
+Authorization: Bot {{token}}
+Content-Type: application/json
+
+{
+  "name": "waifu",
+  "type": 1,
+  "description": "┬─┬ノ( º _ ºノ)",
+  "options": [
+    {
+      "name": "category",
+      "description": "Category",
+      "type": 3,
+      "required": true,
+      "choices": [
+        {
+          "name": "Waifu",
+          "value": "waifu"
+        },
+        {
+          "name": "Neko",
+          "value": "neko"
+        },
+        {
+          "name": "shinobu",
+          "value": "Shinobu"
+        },
+        {
+          "name": "megumin",
+          "value": "Megumin"
+        },
+        {
+          "name": "bully",
+          "value": "Bully"
+        },
+        {
+          "name": "Cuddle",
+          "value": "Cuddle"
+        },
+        {
+          "name": "cry",
+          "value": "Cry"
+        },
+        {
+          "name": "hug",
+          "value": "Hug"
+        },
+        {
+          "name": "Awoo",
+          "value": "awoo"
+        },
+        {
+          "name": "Kiss",
+          "value": "kiss"
+        },
+        {
+          "name": "Lick",
+          "value": "lick"
+        },
+        {
+          "name": "Pat",
+          "value": "pat"
+        },
+        {
+          "name": "Smug",
+          "value": "smug"
+        },
+        {
+          "name": "Bonk",
+          "value": "bonk"
+        },
+        {
+          "name": "Yeet",
+          "value": "yeet"
+        },
+        {
+          "name": "Blush",
+          "value": "blush"
+        },
+        {
+          "name": "Smile",
+          "value": "smile"
+        },
+        {
+          "name": "Wave",
+          "value": "wave"
+        },
+        {
+          "name": "Highfive",
+          "value": "highfive"
+        },
+        {
+          "name": "Handhold",
+          "value": "handhold"
+        },
+        {
+          "name": "Nom",
+          "value": "nom"
+        },
+        {
+          "name": "Bite",
+          "value": "bite"
+        },
+        {
+          "name": "Glomp",
+          "value": "glomp"
+        },
+        {
+          "name": "Slap",
+          "value": "slap"
+        },
+        {
+          "name": "Kill",
+          "value": "kill"
+        },
+        {
+          "name": "Kick",
+          "value": "kick"
+        },
+        {
+          "name": "Happy",
+          "value": "happy"
+        },
+        {
+          "name": "Wink",
+          "value": "wink"
+        },
+        {
+          "name": "Poke",
+          "value": "poke"
+        },
+        {
+          "name": "Dance",
+          "value": "dance"
+        },
+        {
+          "name": "Cringe",
+          "value": "cringe"
+        }
+      ]
+    }
+  ]
+}
