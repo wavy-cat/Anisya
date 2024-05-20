@@ -4,7 +4,7 @@ Authorization: Bot {{token}}
 Content-Type: application/json
 
 {
-  "name": "image",
+  "name": "animal",
   "description": "Sends a photo of a cat, dog or random",
   "options": [
     {
